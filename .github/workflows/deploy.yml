@@ -32,7 +32,7 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: github-pages
-      url: starrlord1.github.io
+      url: https://techmurda.org
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
