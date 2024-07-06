@@ -1,0 +1,59 @@
+---
+import BaseLayout from "../Layouts/BaseLayout.astro";
+
+const pageTitle = "About Me";
+const identity = {
+  firstName: "Will",
+  country: "America",
+  occupation: "Technical Writer",
+};
+
+const skills = ["Certified in Cybersecurity", "Customer Service Management", "CRM & Data Management", "Certfied Cryptocurrency Expert", "Hospitality Management", "POS Systems", "HTML,CSS", "Sales & Lead Generation", "Team Leadership & Collaboration"];
+
+const fontWeight = "bold";
+const textCase = "uppercase";
+---
+
+<style define:vars={{fontWeight, textCase }}>
+  .skill {
+    color: rgb(195, 112, 255);
+    font-weight: var(--fontWeight);
+    text-transform: var(--textCase);
+  }
+</style>
+
+<BaseLayout pageTitle={pageTitle}>
+  <h2>TechMurda Founder</h2>
+  <p>
+    I unofficially founded <b>TechMurda</b> at the age of 14 producing instrumentals. I started producing music not out of passion for it, but as a tool to channel the energy within that I was curious to understand. I was able to see some success in selling these instrumentals via the internet which provided me food and other essentials. I eventually lost interest and began to focus on a career in hospitality which is how I worked my way into hospitality management out of High School. I had to undergo various transformations to get to who I am today, and for that I am gratful. 
+  </p>
+
+
+      <p>The <b>vision</b> overtime is to transform this organization into a conglomerate, focusing on providing IT Services such as:      </p>
+      <li>Cybersecurity Support</li> <li>Blockchain Consulting</li> <li>Semiconductor Manufacturing</li> <li>A.I Consulting</li> <li>Defense Contracting</li> <li>Cloud Storage Solutions</li> <li>Decentralized Physical Infrastructure</li>
+
+
+
+      <p><b>TechMurda</b> will strive vigoursly to become a leader in providing educational resources to children in underserved areas who are interested in a career in growing fields such as Blockchain, A.I, & Cybersecurity. The aim would be to address future work shortages in these areas.<br>
+        <br>This would be achieved by collaborating with other organizations & developing an affilated Non-Profit organization with its entire infrastructure on the blockchain.  Donations made through the Non-Profit will be tracked via the blockchain, and contributors would be able to see exactly where the funds are going, who they're going to, as well as any updates in regards to how the funds were used.</p>
+  
+  
+
+  <p>Here are a few facts about me:</p>
+  <ul>
+    <li>My name is {identity.firstName}.</li>
+    <li>I live in {identity.country} working as a {identity.occupation}.</li>
+    <li>I am not an expert in anything. I am constantly learning, growing & evolving.</li>
+    <li>  
+    <p>
+      Currently expanding my technical and communication skills both spoken and written. My experience is predominatly customer service focused with an emphasis in hospitality management.
+    </p>
+    </li>
+    {
+
+    }
+  </ul>
+  <p>Skills & Certifications Include:</p><p></p><ul>
+    {skills.map((skill) => <li class="skill">{skill}</li>)}
+  </ul>
+</BaseLayout>

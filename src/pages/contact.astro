@@ -1,0 +1,53 @@
+---
+const pageTitle = "Contact";
+import "../styles/global.css";
+import BaseLayout from "../Layouts/BaseLayout.astro";
+---
+
+<BaseLayout pageTitle={pageTitle}>
+  <div class="contact-box">
+    <form action="/">
+      <label for="fname">First Name</label>
+      <input
+        type="text"
+        id="fname"
+        name="firstname"
+        placeholder="Your First Name..."
+      />
+
+      <br />
+
+      <label for="lname">Last Name</label>
+      <input
+        type="text"
+        id="lname"
+        name="lastname"
+        placeholder="Last Name..."
+      />
+
+      <br />
+      <br />
+      <label for="country">Country</label>
+      <select id="country" name="country">
+        <option value="australia">Europe</option>
+        <option value="canada">Canada</option>
+        <option value="usa">USA</option>
+      </select>
+
+      <label for="subject">Subject</label>
+      <textarea
+        id="subject"
+        name="subject"
+        placeholder="Write something.."
+        style="height:80px"
+      >
+      </textarea>
+
+      <input type="submit" value="Submit" />
+    </form>
+  </div>
+
+  <p>
+    Please reach out via social media links below as this contact page is still under development.
+  </p>
+</BaseLayout>

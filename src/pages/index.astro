@@ -1,16 +1,26 @@
 ---
-
+import BaseLayout from "../Layouts/BaseLayout.astro";
 ---
+<BaseLayout>
+  
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<section class="home">
+    <div class="home-content">
+         <h1>TechMurda</h1>
+         <h3>"The Vision"</h3>
+         <p>
+           <b>TechMurda</b> is all about empowering the future generations with the
+           knowledge and skills required to navigate the digital landscape, fostering
+           a secure and ethical digital space. This ensures a future where technology
+           will serve and guard humanity.
+         </p>
+         <a href="/Topics" class="btn">Explore Topics</a>
+    </div>
+</section>
+
+</BaseLayout>
+
+
+<div class="logo">
+    <img src = "/techmurda-logo.jpeg" alt="TechMurda Logo">
+</div>
