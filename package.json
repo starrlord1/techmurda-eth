@@ -12,6 +12,7 @@
   "dependencies": {
     "@astrojs/check": "^0.7.0",
     "@twa-dev/sdk": "^7.0.0",
+    "@vitejs/plugin-basic-ssl": "^1.1.0",
     "astro": "^4.11.5",
     "typescript": "^5.5.3",
     "web3": "^4.10.0"
