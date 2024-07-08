@@ -8,6 +8,6 @@ const allPosts = await Astro.glob("../pages/posts/*.md");
 <BaseLayout pageTitle={pageTitle}>
   <p>v1.0</p>
   <ul>
-    {allPosts.map((post: { url: any; frontmatter: { title: any; }; }) => <BlogPost url={post.url} title={post.frontmatter.title} />)}
+    {allPosts.map((post) => <BlogPost url={post.url} title={post.frontmatter.title} />)}
   </ul>
 </BaseLayout>
